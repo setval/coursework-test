@@ -19,6 +19,8 @@ type Service struct {
 
 func main() {
 
+	fmt.Println("Hello")
+
 	db, err := sqlx.Connect("postgres", "host=localhost user=postgres password=postgres dbname=coursework sslmode=disable")
 	if err != nil {
 		log.Fatalln(err)
